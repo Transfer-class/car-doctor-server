@@ -74,6 +74,9 @@ async function run() {
             res.send(result)
 
         })
+        app.get('/check',(req,res)=>{
+            res.send('checking done')
+        })
 
         app.get('/services/:id',async(req,res)=>{
             const id = req.params.id 
